@@ -23,7 +23,7 @@ class TestUtility(unittest.TestCase):
         self.assertEqual(False, validate_name("ชาย ปอ"))
 
     def test_validate_id_with_valid_input_id_none_of_id(self):
-        self.assertEqual(False, validate_id("123456789101"))
+        self.assertEqual(False, validate_id("1231243"))
 
     def test_validate_id_with_valid_input_id_none_of_none(self):
         self.assertEqual(False, validate_id(""))
