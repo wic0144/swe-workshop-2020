@@ -3,7 +3,6 @@ def validate_name(name):
     digit = re.findall("[0-9]", name)
     sp = re.findall("[!?@#$%^&*()_+]",name)
     space = re.findall("[\s]",name)
-
     if digit or sp or not name or space:
         return False
     else:
@@ -12,6 +11,11 @@ def validate_name(name):
 
 
 def validate_id(id):
+    digit = re.findall("[0-9]", id)
+    sp = re.findall("[!?@#$%^&*()_+]",id)
+    space = re.findall("[\s]",id)
+    if not len(id.split())== 12 or not digit or None or sp or space:
+        return False
     return True
 
 
