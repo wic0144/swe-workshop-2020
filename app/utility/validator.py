@@ -14,7 +14,7 @@ def validate_id(id):
     digit = re.findall("[0-9]", id)
     sp = re.findall("[!?@#$%^&*()_+]",id)
     space = re.findall("[\s]",id)
-    if len(id.split()) < 13 or not digit or None or sp or space:
+    if not len(id) == 13 or not digit or None or sp or space:
         return False
     else :
         return True
